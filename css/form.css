@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+	width: auto;
+}
+header{
+	background-color: black;
+	height: 7em;
+    border-bottom: 1px whitesmoke solid;
+}
+header img{
+	width: 6em;
+	float: left;
+	margin-top: 1em;
+	margin-left: 2em;
+}
+header ul{
+	float: right;
+	margin-right: 4em;
+	margin-top: 2em;
+	font-size: 1.5em;
+}
+.menu{
+	list-style-type: none;
+}
+header li{
+	display: inline;
+	margin-left: 2em;
+}
+header a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+
+
+
+
+footer{
+	position: relative;
+	margin-top: 5em;
+    padding-bottom: 12em;
+    border-top: 1px whitesmoke solid;
+}	
+footer ul{
+	position: absolute;
+	float: left;
+	margin-top: 2em;
+    margin-left: 5em;
+}
+footer li{
+	color: whitesmoke;
+	padding-bottom: 1em;
+}
+footer li:first-child{
+	list-style-image:url("../img/phone.png");
+	font-size: 2em;
+}
+footer li:last-child{
+	list-style-image:url("../img/mail.jpg");
+	font-size: 2em;
+}
+footer img{
+	float: right;
+	width: 10em;
+	margin-right: 2em;
+}
+
+@media(max-width: 950px)
+{
+	footer{
+		padding: 0;
+	}
+	footer ul{
+		margin: 0;
+		float: none;
+		display: block;
+		font-size: 0.7em;
+		margin-left: 30%;
+		margin-top: 5em;
+	}
+	footer li:first-child{
+		list-style-image:url("../img/phone2.png");
+		font-size: 2em;
+	}
+	footer li:last-child{
+		list-style-image:url("../img/mail2.png");
+		font-size: 2em;
+	}
+	footer img{
+		float: none;
+		margin-left: 30%;
+		margin-top: 10em;	
+	}
+	.img2 img{
+		margin-left: 25%;
+	}
+}

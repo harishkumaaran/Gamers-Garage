@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+	width: auto;
+}
+header{
+	background-color: black;
+	height: 7em;
+    border-bottom: 1px whitesmoke solid;
+}
+header img{
+	width: 6em;
+	float: left;
+	margin-top: 1em;
+	margin-left: 2em;
+}
+header ul{
+	float: right;
+	margin-right: 4em;
+	margin-top: 2em;
+	font-size: 1.5em;
+}
+.menu{
+	list-style-type: none;
+}
+header li{
+	display: inline;
+	margin-left: 2em;
+}
+header a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+.img1 img{
+    width: 60%;
+    margin-left: 20%;
+}
+.img1{
+    background-image: url("../img/bg.png");
+    background-size: 100%;
+    margin-bottom: 1em;
+}
+
+.about{
+    display: none;
+    position: relative;
+}
+.about h1{
+    text-align: center;
+    color: #7b34df;
+    margin-top: 1em;
+    font-size: 3.5em;
+}
+.about ul{
+    margin: 3em 0 0 4em;
+}
+.about li{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+.about p{
+    font-size: 1.5em;
+    margin: 2em 2.5em 0 3em;
+}
+.about a{
+    position:absolute;
+    text-decoration: none;
+    border: 1px #c99f50 solid;
+    border-radius: 2em;
+    padding: 1em;
+    color: whitesmoke;
+    background-color: #c99f50;
+    top: 30em;
+    left: 3em;
+}
+.about a:hover{
+    border: 1px #b38037 solid;
+    background-color: #b38037;
+}
+.drpdn{
+    margin-top: 3em;
+    border: 1px whitesmoke solid;
+    width: 50%;
+    margin-left: 25%;
+}
+.drpdn .img2 img{
+    width: 100%;
+}
+.drpdn:hover{
+    margin-top: 3em;
+    border: 1px whitesmoke solid;
+    width: 60%;
+    margin-left: 20%;
+}
+.drpdn:hover .about{
+    display: block;
+    color: whitesmoke;
+    padding-bottom: 15em;
+}
+
+
+
+
+
+footer{
+	position: relative;
+	margin-top: 5em;
+    padding-bottom: 12em;
+    border-top: 1px whitesmoke solid;
+}	
+footer ul{
+	position: absolute;
+	float: left;
+	margin-top: 2em;
+    margin-left: 5em;
+}
+footer li{
+	color: whitesmoke;
+	padding-bottom: 1em;
+}
+footer li:first-child{
+	list-style-image:url("../img/phone.png");
+	font-size: 2em;
+}
+footer li:last-child{
+	list-style-image:url("../img/mail.jpg");
+	font-size: 2em;
+}
+footer img{
+	float: right;
+	width: 10em;
+	margin-right: 2em;
+}
+
+@media(max-width: 950px)
+{
+	footer{
+		padding: 0;
+	}
+	footer ul{
+		margin: 0;
+		float: none;
+		display: block;
+		font-size: 0.7em;
+		margin-left: 30%;
+		margin-top: 5em;
+	}
+	footer li:first-child{
+		list-style-image:url("../img/phone2.png");
+		font-size: 2em;
+	}
+	footer li:last-child{
+		list-style-image:url("../img/mail2.png");
+		font-size: 2em;
+	}
+	footer img{
+		float: none;
+		margin-left: 30%;
+		margin-top: 10em;	
+	}
+	.img2 img{
+		margin-left: 25%;
+	}
+}
