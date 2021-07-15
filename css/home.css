@@ -49,7 +49,7 @@ header a{
 .aboutgrid{
 	margin-top: 3px;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 2px;
 }
 .aboutgrid img{
@@ -78,21 +78,32 @@ header a{
 	padding-top: 0.5em;
 }
 .img2{
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
-.img2 img{
+.img-21{
 	width: 20em;
 }
-.flex{
-	display: flex;
-	flex-direction: column;
+
+.img-21 img{
+	width: 100%;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 60%;
+	justify-content: center;
+	background-color: black;
+	padding-bottom: 2em;
 }
 .img1 img{
 	width: 100%;
+	padding-bottom: 1.5em;
+	padding-top: 2em;
 }
 footer{
+	border-top: 1px white solid;
 	position: relative;
-	padding: 12em;
+	padding: 3em;
 }	
 footer ul{
 	position: absolute;
@@ -130,7 +141,23 @@ footer img{
 		height: 17em;
 	}
 	.aboutgrid{
-		display: block;
+		display: flex;
+		flex-direction: column;
+	}
+	.content-1{
+		order: 2;
+	}
+	.content-2{
+		order: 1;
+		padding-bottom: 2em;
+	}
+	.content-3{
+		order: 3;
+		padding-bottom: 2em;
+	}
+	.content-4{
+		order: 4;
+
 	}
 	.temp{
 		display: flex;
